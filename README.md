@@ -3,7 +3,7 @@ Notes to myself for setup, plugins and more
 
 ## My Editors
 
-- <a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a>
+- [PyCharm](https://www.jetbrains.com/pycharm/)
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 - [VS Codium](https://vscodium.com/)
 - [Notepad++](https://notepad-plus-plus.org/)
