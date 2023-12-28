@@ -15,6 +15,10 @@ Notes to myself for setup, plugins and more
 - [Custom Postfix Templates](https://plugins.jetbrains.com/plugin/9862-custom-postfix-templates)
 - [Rust](https://plugins.jetbrains.com/plugin/22407-rust)
 
+Windows Path for Custom Postfix Templates (replace {VERSION} with your installed version number):
+
+    %APPDATA%\JetBrains\PyCharm{VERSION}\plugins\intellij-postfix-templates_templates\templates\python
+
 ## Python
 
 - [Miniforge](https://conda-forge.org/miniforge/)
