@@ -1,0 +1,96 @@
+.all : Return True if all elements of the iterable are true 
+	ANY   →   all($expr$)$END$
+
+.any : Return True if any element of the iterable is true
+	ANY   →   any($expr$)$END$
+
+.bin : Convert an integer number to a binary string prefixed with "0b"
+	ANY   →   bin($expr$)$END$
+
+.bool : Return a Boolean value
+	ANY   →   bool($expr$)$END$
+
+.chr : Return the string representing a character whose Unicode code point is an integer
+	ANY   →   chr($expr$)$END$
+
+.complex : Return a complex number
+	ANY   →   complex($expr$)$END$
+
+.dir : Return the list of names in the current local scope or list of valid attributes
+	ANY   →   dir($expr$)$END$
+
+.divmod : Return a pair of numbers consisting of their quotient and remainder when using integer division
+	ANY   →   divmod($expr$)$END$
+
+.format : Convert a value to a "formatted" representation
+	ANY   →   format($expr$)$END$
+
+.forrng : Iterate through range
+	ANY   →   for $var$ in range($expr$):\
+    $END$
+
+.forzip : Iterate with zip()
+	ANY   →   for $var$ in zip($expr$, $iterable$):\
+    $END$
+
+.hash : Return the hash value
+	ANY   →   hash($expr$)$END$
+
+.hex : Convert an integer number to a lowercase hexadecimal string prefixed with "0x"
+	ANY   →   hex($expr$)$END$
+
+.id : Return the "identity"
+	ANY   →   id($expr$)$END$
+
+.input : Prompts user input
+	ANY   →   input($expr$)$END$
+
+.isinstance : Return True if instance of class
+	ANY   →   isinstance($expr$, $END$)
+
+.issubclass : Return True if class is a subclass 
+	ANY   →   issubclass($expr$, $END$)
+
+.len : Return the length
+	ANY   →   len($expr$)$END$
+
+.oct : Convert an integer number to an octal string prefixed with "0o"
+	ANY   →   oct($expr$)$END$
+
+.openr : Open a path with read mode
+	ANY   →   with open($expr$, "r", encoding="utf-8") as $file_name$:\
+    $END$
+
+.openw : Open a path with write mode
+	ANY   →   with open($expr$, "w", encoding="utf-8") as $file_name$:\
+    $END$
+
+.ord : Given a string representing one Unicode character, return an integer representing the Unicode code point of that character
+	ANY   →   ord($expr$)$END$
+
+.pow : Return base to the power
+	ANY   →   pow($expr$, $END$)
+
+.range : Return range
+	ANY   →   range($expr$)$END$
+
+.repr : Return a string containing a printable representation
+	ANY   →   repr($expr$)$END$
+
+.round : Return number rounded to n digits precision after the decimal point
+	ANY   →   round($expr$, $ndigits$)$END$
+
+.slice : Return a slice object
+	ANY   →   slice($expr$)$END$
+
+.sum : Sums items of iterable
+	ANY   →   sum($expr$)$END$
+
+.type : Return the type
+	ANY   →   type($expr$)$END$
+
+.zip : Iterate over several iterables in parallel
+	ANY   →   zip($expr$, $END$)
+
+.zips : Iterate over several iterables in parallel with strict=True
+	ANY   →   zip($expr$, $END$, strict=True)
