@@ -33,6 +33,9 @@
 	ANY   →   for $var$ in zip($expr$, $iterable$):\
     $END$
 
+.fstr : Cast to fstr
+	ANY   →   f"$expr$"$END$
+
 .hash : Return the hash value
 	ANY   →   hash($expr$)$END$
 
@@ -79,6 +82,9 @@
 
 .round : Return number rounded to n digits precision after the decimal point
 	ANY   →   round($expr$, $ndigits$)$END$
+
+.rstr : Cast to fstr
+	ANY   →   r"$expr$"$END$
 
 .slice : Return a slice object
 	ANY   →   slice($expr$)$END$
