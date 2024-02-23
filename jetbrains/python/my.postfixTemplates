@@ -22,6 +22,9 @@
 .divmod : Return a pair of numbers consisting of their quotient and remainder when using integer division
 	ANY   →   divmod($expr$)$END$
 
+.expr : Wrap with parantheses and put cursor at beginning
+	ANY   →   $END$($expr$)
+
 .format : Convert a value to a "formatted" representation
 	ANY   →   format($expr$)$END$
 
@@ -56,6 +59,9 @@
 
 .len : Return the length
 	ANY   →   len($expr$)$END$
+
+.lstr : Cast to literal string
+	ANY   →   "$expr$"$END$
 
 .oct : Convert an integer number to an octal string prefixed with "0o"
 	ANY   →   oct($expr$)$END$
@@ -92,8 +98,14 @@
 .sum : Sums items of iterable
 	ANY   →   sum($expr$)$END$
 
+.todo : Add TODO comment
+	ANY   →   $expr$  # TODO: $END$
+
 .type : Return the type
 	ANY   →   type($expr$)$END$
+
+.var : Assign value to a variable
+	ANY   →   $END$ = $expr$
 
 .zip : Iterate over several iterables in parallel
 	ANY   →   zip($expr$, $END$)
