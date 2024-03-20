@@ -37,7 +37,7 @@
     $END$
 
 .fstr : Cast to fstr
-	ANY   →   f"$expr$"$END$
+	ANY   →   f"{$expr$}"$END$
 
 .hash : Return the hash value
 	ANY   →   hash($expr$)$END$
